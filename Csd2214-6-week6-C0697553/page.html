@@ -1,21 +1,20 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>t1</title>
+    <script type="text/javascript">
+        function addnumbers(j) {
+            var sum = 0;
+            while (1 < j+1) { sum += j--; }
+            return sum;
+        }
+    </script>
 </head>
 <body>
     <script>
-        var input1 = prompt("how high should I count up to?");
-        var sum = 0;
-        for (var i = 0; i <= input1; i++) {
-            document.write("<p> Point A: i is " + i);
-            document.write("<p>Point A: sum is " + sum);
-            sum += i;
-            document.write("<p>Point B: sum is " + sum);
-        }
-        document.write("<hr><p>Point c: i is " + i);
-        document.write(sum);
-            //
+        var inputnumber = prompt("please state starting number");
+        document.write(addnumbers(inputnumber));
+
     </script>
 </body>
 </html>
